@@ -10,42 +10,42 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #ANTIJS_V2
-cl = LineClient()
-#cl = LineClient(authToken='ISI TOKENMU  DISINI')
+#cl = LineClient()
+cl = LineClient(authToken='Ewv4tyzxw9oyreI2TTTe.D5ONgzkevY90dAXA7dXUBG.JfydzUlUrb+EGIre6cHogBREMsOVY3zefTRZX5bxrCA=')
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient()
-#ki = LineClient(authToken='ISI TOKENMU  DISINI')
+#ki = LineClient()
+ki = LineClient(authToken='EwhUllmKhFdHaRzbyP74.VAOW86Q+P8IH7vEmwvW7za.zAdZ0s6f69uZ/Or9eaeFaog9mf3drbl7+/jEX/Pwkhs=')
 ki.log("Auth Token : " + str(ki.authToken))
 channel1 = LineChannel(ki)
 ki.log("Channel Access Token : " + str(channel1.channelAccessToken))
 
-kk = LineClient()
-#kk = LineClient(authToken='ISI TOKENMU  DISINI')
+#kk = LineClient()
+kk = LineClient(authToken='EwNgVsPynNlB6nsponx5.cLNkp/gS4oV57O3zZvnR5q.OFtmh6qiYm6Z38Gw3YAMIHOuUAEMJUXPtqAUKtWHgZg=')
 kk.log("Auth Token : " + str(kk.authToken))
 channel2 = LineChannel(kk)
 kk.log("Channel Access Token : " + str(channel2.channelAccessToken))
 
-kc = LineClient()
-#kc = LineClient(authToken='ISI TOKENMU  DISINI')
+#kc = LineClient()
+kc = LineClient(authToken='EwvL331AgUdbIeDmAtY0.b9K7qca5T2DLr66OVdlu8a.r72n/4+7BDKd6fk4RYlQdgFXgYHMnOwGoDXoGi/Xv38=')
 kc.log("Auth Token : " + str(kc.authToken))
 channel3 = LineChannel(kc)
 kc.log("Channel Access Token : " + str(channel3.channelAccessToken))
 
-sw = LineClient()
-#sw = LineClient(authToken='ISI TOKENMU  DISINI')
+#sw = LineClient()
+sw = LineClient(authToken='Ew36Tyw4dbqNeJKGdfxc.8KHPNTdVmR/Miq1UOv3IRa.3vjoQDcMWw/84LtKCUYo5GP7HA5xz/F/fetOr/O9dY0=')
 sw.log("Auth Token : " + str(sw.authToken))
 channel11 = LineChannel(sw)
 sw.log("Channel Access Token : " + str(channel11.channelAccessToken))
 
 poll = LinePoll(cl)
 call = cl
-creator = ["ud296655acef67cbd5e8208e63629f78b"]
-owner = ["ud296655acef67cbd5e8208e63629f78b"]
-admin = ["ud296655acef67cbd5e8208e63629f78b"]
-staff = ["ud296655acef67cbd5e8208e63629f78b"]
+creator = ["u97c0f684eee594bdffac84a6a3cd7a06"]
+owner = ["u97c0f684eee594bdffac84a6a3cd7a06","u779a27199284572f740dac5aec3c6e6e","ubdaa30f3aabfa7c8a1ed578c595c3b64","u0a59ca3fe1ace0ebf9ee8dd9cd536be5","u07d93b402039b7676547aea8bc32d4f0","uf248699ed0ef32bfa6210d6ea15de2ac"]
+admin = ["u97c0f684eee594bdffac84a6a3cd7a06","u779a27199284572f740dac5aec3c6e6e","ubdaa30f3aabfa7c8a1ed578c595c3b64","u0a59ca3fe1ace0ebf9ee8dd9cd536be5","u07d93b402039b7676547aea8bc32d4f0","uf248699ed0ef32bfa6210d6ea15de2ac"]
+staff = ["u97c0f684eee594bdffac84a6a3cd7a06","u779a27199284572f740dac5aec3c6e6e","ubdaa30f3aabfa7c8a1ed578c595c3b64","u0a59ca3fe1ace0ebf9ee8dd9cd536be5","u07d93b402039b7676547aea8bc32d4f0","uf248699ed0ef32bfa6210d6ea15de2ac"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -1333,7 +1333,7 @@ def bot(op):
 
                         elif cmd == "creator" or text.lower() == 'creator':
                             if msg._from in admin:
-                                cl.sendText(msg.to,"Creator Bot ARIFISTIFIK") 
+                                cl.sendText(msg.to,"Creator Bot Mr GEPENG / ABY MANYUN") 
                                 ma = ""
                                 for i in creator:
                                     ma = cl.getContact(i)
